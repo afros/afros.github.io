@@ -5,3 +5,7 @@
 .btn-circle {
 	background: #084796;
 }
+
+.navbar-custom .nav li.active a {
+	background: #ff9900;
+}
