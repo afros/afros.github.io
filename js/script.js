@@ -9,7 +9,11 @@ angular.module('podium').config(function($translateProvider) {
     	CONTACT: 'book a place'
     },
     SLOGAN: 'Heilbronn: an useful diaspora',
-    SLOGAN_SUB: 'Organized on behalf of the cultural week of African Network Of heilbronn'
+    SLOGAN_SUB: 'Organized on behalf of the cultural week of African Network Of heilbronn',
+    ABOUT: {
+    	TITLE: 'About African Network Of Heilbronn',
+    	CONTENT: ''
+    }
   });
   $translateProvider.translations('de', {
     TITLE: 'Podiumdiskussion',
@@ -19,7 +23,11 @@ angular.module('podium').config(function($translateProvider) {
     	CONTACT: 'Reservieren'
     },
     SLOGAN: 'Heilbronn: eine nützliche Diaspora',
-    SLOGAN_SUB: 'Organisiert im Auftrag der Kulturwoche von African Network of Heilbronn'
+    SLOGAN_SUB: 'Organisiert im Auftrag der Kulturwoche von African Network of Heilbronn',
+    ABOUT: {
+    	TITLE: 'Über African Network Of Heilbronn',
+    	CONTENT: ''
+    }
   });
   $translateProvider.translations('fr', {
     TITLE: 'Forum de discussion',
@@ -29,7 +37,11 @@ angular.module('podium').config(function($translateProvider) {
     	CONTACT: 'Reservez'
     },
     SLOGAN: 'Heilbronn: Une diaspora utile',
-    SLOGAN_SUB: 'Organisé pour le compte de la semaine culturelle de l\'African Network Of heilbronn'
+    SLOGAN_SUB: 'Organisé pour le compte de la semaine culturelle de l\'African Network Of heilbronn',
+   	 ABOUT: {
+    	TITLE: 'A propos de l\'African Network Of Heilbronn',
+    	CONTENT: ''
+    }
   });
   $translateProvider.preferredLanguage('de');
 });
