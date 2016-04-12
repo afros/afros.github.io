@@ -16,6 +16,10 @@ angular.module('podium').config(function($translateProvider) {
     },
     SPEAKERS: {
     	CONTENT: 'For this evening of Friday, 29.04, are invited the following speakers'
+    },
+    CONTACT: {
+    	'TITLE': 'contact us',
+    	'CONTENT': 'Send us a message or fill the form bellow to book your place!'
     }
   });
   $translateProvider.translations('de', {
@@ -33,6 +37,10 @@ angular.module('podium').config(function($translateProvider) {
     },
     SPEAKERS: {
     	CONTENT: 'Für diesen Abend von Freitag, 29.04, werden die folgenden Referenten eingeladen'
+    },
+    CONTACT: {
+    	'TITLE': 'contact us',
+    	'CONTENT': 'Schreiben Sie uns eine Email oder füllen Sie das Formular'
     }
   });
   $translateProvider.translations('fr', {
@@ -50,6 +58,10 @@ angular.module('podium').config(function($translateProvider) {
     },
     SPEAKERS: {
     	CONTENT: 'Pour cette soirée du vendredi 29.04, sont invités les intervenants suivants'
+    },
+    CONTACT: {
+    	'TITLE': 'contact us',
+    	'CONTENT': 'Envoyez nous un message ou remplissez le formulaire ci-dessous pour confirmer votre place'
     }
   });
   $translateProvider.preferredLanguage('de');
