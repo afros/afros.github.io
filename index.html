@@ -17,11 +17,12 @@
     <!-- Custom CSS -->
     <link href="css/grayscale.css" rel="stylesheet">
 
- <link href="css/grayscale.css" rel="stylesheet">
+ <link href="css/flag-icon.min.css" rel="stylesheet">
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -43,7 +44,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Podiumdiskussion</span> 29.04.2016 
+                    <i class="fa fa-play-circle"></i>  <span class="light">{{ 'TITLE' |translate }}</span> 29.04.2016 
                 </a>
             </div>
 
@@ -55,22 +56,30 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">Über uns</a>
+                        <a class="page-scroll" href="#about">{{ 'NAVBAR.ABOUT'|translate }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#download">Download</a>
+                        <a class="page-scroll" href="#download">{{ 'NAVBAR.WHO'|translate }}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">{{ 'NAVBAR.CONTACT'|translate }}</a>
                     </li>
                     <li ng-if="getLanguage() != 'en'">
-                        <a class="" href=#  ng-click="translate('en')">En</a>
+                        <a class="" href=#  ng-click="translate('en')">
+                            <span class="flag-icon flag-icon-gb"></span>
+                        </a>
                     </li>
                     <li ng-if="getLanguage() != 'de'">
-                        <a class="" href=#  ng-click="translate('de')">De</a>
+                        <a class="" href=#  ng-click="translate('de')">
+                            <span class="flag-icon flag-icon-de"></span>
+
+                        </a>
                     </li>
                      <li ng-if="getLanguage() != 'fr'">
-                        <a class="" href=# ng-click="translate('fr ')">Fr</a>
+                        <a class="" href=# ng-click="translate('fr')">
+                            <span class="flag-icon flag-icon-fr"></span>
+
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -84,12 +93,14 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Grayscale</h1>
-                        <p class="intro-text">A free, responsive, one page Bootstrap theme.<br>Created by Start Bootstrap.</p>
+                    <div class="col-md-12">
+<center>                        <h1 class="brand-heading">{{ 'TITLE' |translate }}</h1>
+                        <p class="intro-text">{{ 'SLOGAN'|translate }}<br>
+                        {{ 'SLOGAN_SUB'|translate }}</p>
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
+                        </center>
                     </div>
                 </div>
             </div>
@@ -159,7 +170,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.js"></script>
 
 
     <!-- Plugin JavaScript -->
