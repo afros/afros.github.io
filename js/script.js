@@ -20,6 +20,10 @@ angular.module('podium').config(function($translateProvider) {
     CONTACT: {
     	'TITLE': 'contact us',
     	'CONTENT': 'Send us a message or fill the form bellow to book your place!'
+    },
+    SPONSOR: {
+    	'TITLE': 'Sponsors & Partenaires',
+    	'CONTENT': 'Pour le deroulement de cet évenement, nous remercions nos Sponsors et partenaires'
     }
   });
   $translateProvider.translations('de', {
@@ -41,6 +45,10 @@ angular.module('podium').config(function($translateProvider) {
     CONTACT: {
     	'TITLE': 'contact us',
     	'CONTENT': 'Schreiben Sie uns eine Email oder füllen Sie das Formular'
+    },
+    SPONSOR: {
+    	'TITLE': 'Sponsors & Partenaires',
+    	'CONTENT': 'Pour le deroulement de cet évenement, nous remercions nos Sponsors et partenaires'
     }
   });
   $translateProvider.translations('fr', {
@@ -62,6 +70,10 @@ angular.module('podium').config(function($translateProvider) {
     CONTACT: {
     	'TITLE': 'contact us',
     	'CONTENT': 'Envoyez nous un message ou remplissez le formulaire ci-dessous pour confirmer votre place'
+    },
+    SPONSOR: {
+    	'TITLE': 'Sponsors & Partenaires',
+    	'CONTENT': 'Pour le deroulement de cet évenement, nous remercions nos Sponsors et partenaires'
     }
   });
   $translateProvider.preferredLanguage('de');
